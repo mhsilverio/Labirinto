@@ -143,8 +143,8 @@ int main() {
         cout << labirinto_mostra[i] << endl;
     }
 
-    cout << "Localizacao da S (Saida): " << "( " << px.topo() << ", " << py.topo() << " )" << endl << endl;
-    cout << "Quantidade de movimentos utilizados para concluir o labirinto: " << i << endl;
+    cout << endl << "Localizacao da S (Saida): " << "( " << px.topo() << ", " << py.topo() << " )" << endl << endl;
+    cout << "Quantidade de movimentos utilizados para concluir o labirinto: " << i << endl << endl;
 
     while (!px.vazia() && !py.vazia()) {
         px_.push(px.topo());
@@ -152,21 +152,15 @@ int main() {
         py_.push(py.topo());
         py.pop();
     }
-
-    while (!px_.vazia() && !py_.vazia()) {
-        px_.pop();
-        py_.pop();
-        ++cont;
-    }
 }
 
 // -----------------------------------------------------------
 
-Pilha::Pilha() {  //Nao sao independentes, sao matodos pertencentes a classe 
-    topo_ = -1;
+Pilha::Pilha() {                        //Nao sao independentes, sao matodos pertencentes a classe 
+    topo_ = -1;                         //indica que a pilha não está vazia
 }
 
-void Pilha::push(TipoDado elem) { //leva pro topo da pilha
+void Pilha::push(TipoDado elem) {       //leva pro topo da pilha
     if (!cheia()) {
         ++topo_;
         pilha[topo_] = elem;
@@ -175,7 +169,7 @@ void Pilha::push(TipoDado elem) { //leva pro topo da pilha
         cerr << "PILHA CHEIA!" << endl;
 }
 
-void Pilha::pop() {    //tira o elem do topo da pilha
+void Pilha::pop() {                     //tira(descrementa) o elem do topo da pilha
     if (!vazia()) {
         --topo_;
     }
@@ -184,7 +178,7 @@ void Pilha::pop() {    //tira o elem do topo da pilha
 }
 
 TipoDado Pilha::topo() {
-    if (!vazia())       // nao vazia?
+    if (!vazia())                       //retorna elem no topo da pilha 
         return pilha[topo_];
     else {
         cerr << "PILHA VAZIA!" << endl;
