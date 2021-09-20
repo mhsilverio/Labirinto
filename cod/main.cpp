@@ -144,13 +144,6 @@ int main() {
 
     cout << endl << "Localizacao da S (Saida): " << "( " << px.topo() << ", " << py.topo() << " )" << endl << endl;
     cout << "Quantidade de movimentos utilizados para concluir o labirinto: " << i << endl << endl;
-
-    while (!px.vazia() && !py.vazia()) {
-        px_.push(px.topo());
-        px.pop();
-        py_.push(py.topo());
-        py.pop();
-    }
 }
 
 // -----------------------------------------------------------
