@@ -5,7 +5,7 @@
 #define PILHA_H
 
 const int MAXPILHA = 200;
-using TipoDado = int;
+using TipoDado = int;       //definição do tipo de dados da pilha
 
 class Pilha {
 private:
