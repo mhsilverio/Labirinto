@@ -68,7 +68,6 @@ int main() {
     Pilha px_;
     Pilha py_;
     int i_ = 0;
-    int cont = 0;
 
     /* LEGENDA:
             x+1 = DESCE UMA CASA
