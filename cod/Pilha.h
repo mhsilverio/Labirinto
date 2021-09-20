@@ -4,7 +4,7 @@
 #ifndef PILHA_H
 #define PILHA_H
 
-const int MAXPILHA = 150;
+const int MAXPILHA = 200;
 using TipoDado = int;
 
 class Pilha {
