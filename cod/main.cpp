@@ -64,9 +64,6 @@ int main() {
     Pilha px;
     Pilha py;
     int i = 0;
-
-    Pilha px_;
-    Pilha py_;
     int i_ = 0;
 
     /* LEGENDA:
