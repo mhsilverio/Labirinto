@@ -84,7 +84,7 @@ int main() {
     cout << "Localizacao da E (Entrada): " << "( " << x << ", " << y << " )" << endl << endl;
 
     while (labirinto[x][y] != 'S') {
-        if (verificacao(labirinto[x + 1][y])) {
+        if (verificacao(labirinto[x+1][y])) {
             ++x;
             px.push(x);
             py.push(y);
@@ -95,7 +95,7 @@ int main() {
             ++i;
             ++i_;
         }
-        else if (verificacao(labirinto[x - 1][y])) {
+        else if (verificacao(labirinto[x-1][y])) {
             --x;
             px.push(x);
             py.push(y);
@@ -106,7 +106,7 @@ int main() {
             ++i;
             ++i_;
         }
-        else if (verificacao(labirinto[x][y + 1])) {
+        else if (verificacao(labirinto[x][y+1])) {
             ++y;
             px.push(x);
             py.push(y);
