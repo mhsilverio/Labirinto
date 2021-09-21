@@ -143,7 +143,7 @@ int main() {
     }
 
     cout << endl << "Localizacao da S (Saida): " << "( " << px.topo() << ", " << py.topo() << " )" << endl << endl;
-    cout << "Quantidade de movimentos utilizados para chegar até o S (Saida): " << i << endl << endl;
+    cout << "Quantidade de movimentos utilizados para chegar ao S (Saida): " << i << endl << endl;
 }
 
 // -----------------------------------------------------------
