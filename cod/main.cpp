@@ -22,9 +22,9 @@ int main() {
         "X XXXXX X X   XXXXX X",
         "X X     X XXX  X    X",
         "X X X X X   XX XX XXX",
-         "X X XXX X X     X   X",
+        "X X XXX X X     X   X",
         "E X X X X XXXXX XXX X",
-         "X     X X   X X X   X",
+        "X     X X   X X X   X",
         "X XXXXX XXX X XXX X X",
         "X X       X X   X X X",
         "X   XXX X X XXX X X X",
@@ -36,7 +36,7 @@ int main() {
     };
 
     vector<string> labirinto_mostra = labirinto;
-    
+
     int x = 10;
     int y = 0;
 
